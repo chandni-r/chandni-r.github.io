@@ -15,6 +15,7 @@ body{
 
 .menu a {
   font-size: 18px;
+  font-weight: 600;
   /* color: white; */
 }
 /* text styling */
@@ -26,6 +27,7 @@ h1, h2, h3, h4,{
   padding-top: 5px;
   padding-bottom: 5px;
 }
+
 p, a, li {
   padding-top: 2px;
   padding-bottom: 2px;
@@ -42,8 +44,13 @@ p,li{font-size: 14px;}
 
 /* link styling */
 
-a{
+h5, h6, a{
   font-weight: 600;
+}
+
+h4, h5{
+  margin-top: .5em;
+  margin-bottom: .5em;
 }
 
 a:link {
@@ -115,19 +122,45 @@ a:active {
     padding-left: 15%;
     padding-right: 15%;
   }
+
+  /* .grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 10px;
+  } */
 }
 
 /* segment 2 */
 
+.seg2 h2{
+  font-size: 24px;
+  color: #4a4a4a;
+  text-align: center;
+}
+
 .seg2 img{
   width: 100%;
-  /* padding: 10px; */
+}
+
+.seg2 ul{
+  margin:0;
+  padding:0;
 }
 
 .grid {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-gap: 10px;
+  grid-column-gap: 10px;
+  grid-row-gap: 30px;
+}
+
+.grid a{
+  display: grid;
+  grid-template-rows: 1fr minmax(1em,auto);
+}
+
+.grid h4{
+  align-self: start;
 }
 
 /* segment 3 */
@@ -150,5 +183,4 @@ a:active {
 .footer p{
   padding: 30px;
   margin: 0;
-
 }
