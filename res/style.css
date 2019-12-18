@@ -2,23 +2,6 @@
 body{
   margin:0;
 }
-/* menu */
-/* .menu {
-  padding: 10px;
-  text-align: left;
-  background: #FBBC09;
-  font-size: 18px;
-  box-shadow: 1px 2px 10px rgba(0, 0, 0, .3);
-  z-index: 1;
-  position: relative;
-}
-
-.menu a {
-  font-size: 18px;
-  font-weight: 600;
-  /* color: white;
-  } */
-
 
 /* text styling */
 
@@ -57,13 +40,13 @@ h4, h5{
 }
 
 a:link {
-  color: white;
+  color: #404040;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: white;
+  color: grey;
   background-color: transparent;
   text-decoration: none;
 }
@@ -79,58 +62,6 @@ a:active {
   background-color: transparent;
   text-decoration: underline;
 }
-
-
-
-
-
-
-/* start over */
-
-/* make a variation of this for mobile also */
-/* option 1 */
-/* .major-grid{
-  display: grid;
-  grid-template-columns: repeat(4, 1fr);
-  grid-template-areas:
-    "a b b b"
-    "a c c c"
-    "a d d d"
-    "a e e e"
-    "f f f f";
-}
-
-.left {
-  grid-area: a;
-}
-.title1 {
-  grid-area: b;
-}
-.imageset {
-  grid-area: c;
-}
-.title2 {
-  grid-area: d;
-}
-.listset {
-  grid-area: e;
-}
-.footer {
-  grid-area: f;
-}
-
-.left{
-  width: 25%;
-  background: #FBBC09;
-  padding-top: 50px;
-  padding-bottom: 50px;
-  position: fixed;
-  top: 0;
-  bottom: 0;
-}
-
-*/
-
 
 
 /* option 2 */
@@ -249,36 +180,6 @@ a:active {
 .imageset .info{
   padding: 15px;
 }
-
-/* imageset  option 2*/
-
-/* .imageset {
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-}
-
-.imageset a{
-  display: grid;
-  grid-template-rows: 1fr minmax(1em,auto);
-}
-
-.imageset img{
-  width: 100%;
-  border-radius: 0px 0px 0 0 ;
-}
-
-.imageset ul{
-  margin:0;
-  padding:0;
-  border-radius: 0px;
-  background-color: #ffffff;
-}
-
-.imageset .info{
-  padding: 15px;
-} */
-
-
 
 
 /* segment 3 */
