@@ -87,11 +87,10 @@ a:active {
 /* start over */
 
 /* make a variation of this for mobile also */
-.major-grid{
+/* option 1 */
+/* .major-grid{
   display: grid;
   grid-template-columns: repeat(4, 1fr);
-  /* grid-gap: 10px; */
-  /* grid-auto-rows: 100px; */
   grid-template-areas:
     "a b b b"
     "a c c c"
@@ -119,8 +118,6 @@ a:active {
   grid-area: f;
 }
 
-
-/* left */
 .left{
   width: 25%;
   background: #FBBC09;
@@ -129,6 +126,27 @@ a:active {
   position: fixed;
   top: 0;
   bottom: 0;
+}
+
+*/
+
+
+
+/* option 2 */
+.major-grid{
+  display: block;
+}
+
+.left{
+  position: relative;
+  width: 100%
+}
+
+/* left option 2*/
+.left{
+  background: #FBBC09;
+  padding-top: 50px;
+  padding-bottom: 50px;
 }
 
 .left a{
@@ -153,25 +171,17 @@ a:active {
 }
 
 .left h2{
-  font-size: 18px;
   color: #4a4a4a;
   text-align: center;
+  font-size: 23px;
+  margin-left: 30%;
+  margin-right: 30%;
 }
 
 .main-text a{
-
   color: #fff;
-  /* white button */
-  /* color: #FBBC09;
-  display: in-inline-block;
-  background-color: #fff;
-  opacity:0.9;
-  border-radius: 8px;
-  font-weight: 500;
-  text-align: center;
-  width: auto;
-  margin: 7%; */
-}
+  font-weight: 400;
+  }
 
 /* title 1 */
 .title1 h2{
@@ -190,14 +200,39 @@ a:active {
   margin: 50px;
 }
 
-/* imageset */
+/* imageset  option 1*/
 .imageset {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 7%;
-  grid-row-gap: 7%;
-  padding: 5% 15% 10% 15%;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 5%;
+  grid-row-gap: 5%;
+  padding: 5% 5% 5% 5%;
   background-color: #f3f3f3;
+}
+
+.imageset a{
+  display: grid;
+  grid-template-rows: 1fr minmax(1em,auto);
+}
+.imageset img{
+  width: 100%;
+  border-radius: 15px 15px 0 0 ;
+}
+.imageset ul{
+  margin:0;
+  padding:0;
+  border-radius: 15px;
+  background-color: #ffffff;
+}
+.imageset .info{
+  padding: 15px;
+}
+
+/* imageset  option 2*/
+
+/* .imageset {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
 }
 
 .imageset a{
@@ -219,7 +254,10 @@ a:active {
 
 .imageset .info{
   padding: 15px;
-}
+} */
+
+
+
 
 /* segment 3 */
 .listset {
