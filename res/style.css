@@ -131,13 +131,12 @@ a:active {
   bottom: 0;
 }
 
-
 .left a{
+  color: #fff;
   text-align: center;
-  margin: 10px;
+  margin: 20px;
   display: block;
 }
-
 
 .left img{
   border-radius: 150px;
@@ -159,10 +158,19 @@ a:active {
   text-align: center;
 }
 
-.left h3{
-  color: #4a4a4a;
+.main-text a{
+
+  color: #fff;
+  /* white button */
+  /* color: #FBBC09;
+  display: in-inline-block;
+  background-color: #fff;
+  opacity:0.9;
+  border-radius: 8px;
   font-weight: 500;
   text-align: center;
+  width: auto;
+  margin: 7%; */
 }
 
 /* title 1 */
@@ -170,7 +178,10 @@ a:active {
   font-size: 24px;
   color: #4a4a4a;
   text-align: center;
-  margin: 25px;
+  padding: 5%;
+  margin:0;
+  background-color: #f3f3f3;
+
 }
 .title2 h2{
   font-size: 24px;
@@ -183,11 +194,10 @@ a:active {
 .imageset {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 10%;
-  grid-row-gap: 5%;
-  padding-left: 10%;
-  padding-right: 10%;
-
+  grid-column-gap: 7%;
+  grid-row-gap: 7%;
+  padding: 5% 15% 10% 15%;
+  background-color: #f3f3f3;
 }
 
 .imageset a{
@@ -197,19 +207,25 @@ a:active {
 
 .imageset img{
   width: 100%;
-  border-radius: 15px;
+  border-radius: 0px 0px 0 0 ;
 }
 
 .imageset ul{
   margin:0;
   padding:0;
+  border-radius: 0px;
+  background-color: #ffffff;
+}
+
+.imageset .info{
+  padding: 15px;
 }
 
 /* segment 3 */
 .listset {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-column-gap: 10%; */
+  /* grid-column-gap: 5%; */
   /* grid-row-gap: 5%; */
   padding-left: 10%;
   padding-right: 10%;
@@ -254,7 +270,7 @@ ol{
       .imageset {
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-column-gap: 10px;
+        grid-column-gap: 50px;
         grid-row-gap: 30px;
       }
       .listset {
