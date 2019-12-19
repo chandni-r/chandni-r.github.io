@@ -66,9 +66,9 @@ a:active {
 
 /* option 2 */
 .major-grid{
-  display: block;
+  display: grid;
+  grid-auto-rows: auto;
 }
-
 
 .left{
   display: grid;
@@ -156,9 +156,9 @@ a:active {
 .imageset {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 3%;
+  grid-column-gap: 5%;
   grid-row-gap: 3%;
-  padding: 5% 5% 5% 5%;
+  padding: 5% 10% 5% 10%;
   background-color: #f3f3f3;
 }
 
@@ -251,7 +251,8 @@ ol{
 
 @media only screen and (max-width: 1000px) {
       .major-grid{
-        display: block;
+        display: grid;
+        grid-auto-rows: auto;
       }
 
       .left{
@@ -269,11 +270,16 @@ ol{
         text-align: center;
       }
       .imageset {
-        display: grid;
-        grid-template-columns: 1fr;
-        padding: 5% 10% 5% 10%;
-        /* grid-row-gap: 5%; */
-        /* padding: 5% 5% 5% 5%; */
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-column-gap: 5%;
+          grid-row-gap: 0;
+          padding: 5% 10% 5% 10%;
+          background-color: #f3f3f3;
+      }
+
+      .imageset ul{
+        margin-bottom: 15%;
       }
 
       .listset {
