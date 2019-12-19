@@ -247,6 +247,11 @@ ol{
   font-size: 24px;
   padding: 5% 25% 5% 25%;
 }
+
+.content a{
+    color: #549091;
+
+}
 /* smaller screen properties */
 
 @media only screen and (max-width: 1000px) {
