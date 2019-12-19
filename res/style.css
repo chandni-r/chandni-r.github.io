@@ -232,6 +232,21 @@ ol{
    padding-left: 20px;
 }
 
+
+.content img {
+  width:100%;
+}
+
+.content h3{
+  font-size: 36px;
+  text-align: center;
+  padding: 5% 5% 5% 5%;
+}
+
+.content p{
+  font-size: 24px;
+  padding: 5% 25% 5% 25%;
+}
 /* smaller screen properties */
 
 @media only screen and (max-width: 1000px) {
@@ -265,5 +280,9 @@ ol{
         display: grid;
         grid-template-columns: 1fr 1fr;
         grid-gap: 10px;
+      }
+
+      .content p{
+          padding: 5% 5% 5% 5%;
       }
 }
