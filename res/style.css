@@ -3,9 +3,10 @@ body{
   margin:0;
 }
 
+
 /* text styling */
 
-h1, h2, h3, h4, h5, h6, p, a, li {
+h1, h2, h3, h4, h5, h6, p, a, li , ul{
     font-family: 'Nunito', 'Helvetica', sans-serif;
 }
 h1, h2, h3, h4,{
@@ -250,7 +251,6 @@ ol{
 
 .content a{
     color: #549091;
-
 }
 /* smaller screen properties */
 
@@ -304,4 +304,40 @@ ol{
       .content p{
           padding: 5% 5% 5% 5%;
       }
+}
+
+
+/* resume page */
+#more {
+  display: none;
+}
+
+.work-ex, .internships, .education, .awards, .speaking{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-template-areas:
+    "l d"
+    "l e"
+    "l f"
+    "l g"
+    "l h";
+}
+
+.resume-left{
+      grid-area: l;
+}
+.resume-detail-1{
+      grid-area: d;
+}
+.resume-detail-2{
+      grid-area: e;
+}
+.resume-detail-3{
+      grid-area: f;
+}
+.resume-detail-4{
+      grid-area: g;
+}
+.resume-detail-5{
+      grid-area: h;
 }
