@@ -260,7 +260,7 @@ ol{
   display: none;
 }
 
-.work-ex, .internships, .education, .awards, .speaking, .published{
+.work-ex, .internships, .education, .awards, .speaking, .published, .fellowships{
   display: grid;
   grid-template-columns: 1fr 3fr;
   grid-template-areas:
@@ -327,8 +327,12 @@ ol{
 }
 
 .resume-detail-1, .resume-detail-2, .resume-detail-3, .resume-detail-4, .resume-detail-5 {
-  padding-left:25px;
-  padding-right: 15%;
+  padding: 5px 25px 5px 25px;
+  margin-right: 25%;
+  margin-bottom: 2%;
+  border: 1px solid #dcdcdc;
+  border-radius: 15px;
+
 }
 
 .resume-elements a{
@@ -340,6 +344,26 @@ ol{
   margin: 5% 0 5% 0;
 }
 
+.testimonials{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-column-gap: 3%
+}
+
+.test-name {
+    font-weight: bold;
+}
+
+.testimonial-1, .testimonial-2{
+  background-color: #f2f2f2;
+  border-radius: 15px;
+  padding: 5%;
+  margin: 5%;
+}
+
+.test-text{
+  font-style: italic;
+}
 /* smaller screen properties */
 
 @media only screen and (max-width: 800px) {
@@ -392,7 +416,7 @@ ol{
       .content p{
           padding: 5% 5% 5% 5%;
       }
-      .work-ex, .internships, .education, .awards, .speaking, .published{
+      .work-ex, .internships, .education, .awards, .speaking, .published, .fellowships{
         display: block;
       }
 
@@ -401,5 +425,11 @@ ol{
         padding-top: 10%;
         /* padding-left:25px; */
         /* padding-right: 15%; */
+      }
+      .testimonials{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-row-gap: 5%
       }
 }
