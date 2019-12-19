@@ -264,10 +264,14 @@ ol{
           "a"
           "b";
       }
+      .top h3{
+        font-size: 24px;
+      }
 
       .main-text h2{
         margin: 15% 0 15% 0;
         text-align: center;
+        font-size: 24px;
       }
       .imageset {
           display: grid;
