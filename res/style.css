@@ -213,6 +213,10 @@ a:active {
   font-weight: 600;
 }
 
+.listset a{
+  color: #1586f1;
+}
+
 ol{
   margin-top: 2px;
 }
