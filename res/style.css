@@ -438,6 +438,15 @@ ol{
 /* smaller screen properties */
 
 @media only screen and (max-width: 1000px) {
+
+      h1{font-size: 32px;}
+      h2{font-size: 24px;}
+      h3{font-size: 20px;}
+      h4{font-size: 22px; font-weight: 800;}
+      h5{font-size: 22px; font-weight: 400;}
+      h6{font-size: 14px;}
+      p,li{font-size: 24px;}
+
       .major-grid{
         display: grid;
         grid-auto-rows: auto;
@@ -470,12 +479,23 @@ ol{
           grid-template-columns: 1fr;
           grid-column-gap: 5%;
           grid-row-gap: 0;
-          padding: 5% 10% 5% 10%;
+          padding: 5% 5% 5% 5%;
           background-color: #f3f3f3;
       }
 
       .imageset ul{
         margin-bottom: 15%;
+      }
+
+      .imageset img{
+        width: 100%;
+        border-radius: 15px 15px 15px 015px ;
+      }
+
+      .imageset a{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
       }
 
       .content-imageset {
