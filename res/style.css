@@ -322,8 +322,8 @@ ol{
   margin-top: 2px;
 }
 .resume-item-description{
-  margin-top: 2px;
-  margin-bottom: 2px;
+  margin-top: 2%;
+  margin-bottom: 2%;
 }
 
 .resume-detail-1, .resume-detail-2, .resume-detail-3, .resume-detail-4, .resume-detail-5 {
@@ -416,6 +416,15 @@ ol{
       .content p{
           padding: 5% 5% 5% 5%;
       }
+
+      .banner {
+          padding: 50px 5% 70px 5%;
+      }
+
+      .banner h2{
+          text-align: left;
+      }
+
       .work-ex, .internships, .education, .awards, .speaking, .published, .fellowships{
         display: block;
       }
@@ -423,6 +432,7 @@ ol{
       .resume-left-title{
         text-align: left;
         padding-top: 10%;
+        border-bottom: 1px solid #868686;
         /* padding-left:25px; */
         /* padding-right: 15%; */
       }
@@ -430,6 +440,12 @@ ol{
         display: grid;
         grid-template-columns: 1fr;
         grid-template-rows: auto;
-        grid-row-gap: 5%
+      }
+      .resume-detail-1, .resume-detail-2, .resume-detail-3, .resume-detail-4, .resume-detail-5 {
+        padding: 5px 25px 5px 25px;
+        margin: 2% 5% 2% 5%;
+        border: 1px solid #dcdcdc;
+        border-radius: 15px;
+
       }
 }
