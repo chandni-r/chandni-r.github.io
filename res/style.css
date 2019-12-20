@@ -246,12 +246,40 @@ ol{
 
 .content p{
   font-size: 24px;
-  padding: 5% 25% 5% 25%;
+  padding: 7% 25% 2% 25%;
 }
 
 .content a{
     color: #549091;
 }
+.small-img {
+  width: 70% !important;
+  margin: 0 15% 0 15%;
+}
+.myButton {
+	box-shadow:inset 0px 39px 0px -24px #825399;
+	background-color:#6b2d87;
+	border-radius:15px;
+	display:inline-block;
+  /* margin: 2% 30% 2% 30%; */
+  margin: 2% 25% 5% 25%;
+  width: auto;
+	cursor:pointer;
+	color:#ffffff;
+	font-family:Georgia;
+	font-size:18px;
+	font-weight:bold;
+	padding:18px 18px;
+	text-decoration:none;
+}
+.myButton:hover {
+	background-color:#4b285e;
+}
+.myButton:active {
+	position:relative;
+	top:1px;
+}
+
 
 
 
