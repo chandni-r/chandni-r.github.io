@@ -158,7 +158,7 @@ a:active {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 5%;
-  grid-row-gap: 3%;
+  grid-row-gap: 0;
   padding: 5% 10% 5% 10%;
   background-color: #f3f3f3;
 }
@@ -177,6 +177,7 @@ a:active {
   border-radius: 15px;
   background-color: #ffffff;
   box-shadow: 0 8px 6px -6px grey;
+  margin-bottom: 10%;
 }
 .imageset .info{
   padding: 15px;
@@ -284,8 +285,8 @@ ol{
 }
 
 .generalbutton {
-	box-shadow:inset 0px 39px 0px -24px #825399;
-	background-color:#6b2d87;
+	box-shadow:inset 0px 39px 0px -24px #ffaa22;
+	background-color:#ffab23;
 	border-radius:15px;
 	display:inline-block;
   margin: 2% 25% 5% 25%;
@@ -297,12 +298,18 @@ ol{
 	padding:18px 18px;
 	text-decoration:none;
 }
-.myButton:hover {
-	background-color:#4b285e;
+.generalbutton:hover {
+	background-color:#ffb743;
 }
-.myButton:active {
+.generalbutton:active {
 	position:relative;
 	top:1px;
+}
+
+.videos{
+  margin: 0 30% 0 30%;
+  width:560px;
+  height:315px;
 }
 
 
@@ -499,6 +506,10 @@ ol{
         margin: 2% 5% 2% 5%;
         border: 1px solid #dcdcdc;
         border-radius: 15px;
-
+      }
+      .videos{
+        margin: 0;
+        width:100%;
+        /* height:315px; */
       }
 }
