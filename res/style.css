@@ -263,7 +263,7 @@ ol{
 .content-imageset {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5%;
+  grid-column-gap: 0;
   grid-row-gap: 0;
   padding: 2% 2% 2% 2%;
 }
@@ -481,9 +481,9 @@ ol{
       .content-imageset {
         display: grid;
         grid-template-columns: 1fr;
-        grid-column-gap: 5%;
+        grid-column-gap: 0;
         grid-row-gap: 0;
-        padding: 5% 10% 5% 10%;
+        padding:0;
       }
 
       .listset {
