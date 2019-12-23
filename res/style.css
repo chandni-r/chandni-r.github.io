@@ -19,6 +19,8 @@ p, a, li {
   /* padding-bottom: 2px; */
 }
 
+
+/* typography */
 h1{font-size: 24px;}
 h2{font-size: 18px;}
 h3{font-size: 16px;}
@@ -240,18 +242,25 @@ ol{
 
 .top{
   display: grid;
-  grid-template-columns: minmax(160px, 5fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) ;
+  grid-template-columns: minmax(160px, 8fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
   background-color: #FBBC09;
+  padding: 0 10% 0 10%;
 }
 
 
-.top a{
+.top {
    color: #404040;
-   float: right;
-   float: left;
-   padding-left: 20px;
+
+   /* padding-left: 20px; */
 }
 
+.logo{
+     float: left;
+}
+
+#resume-button, #about-button {
+  text-align: right;
+}
 
 .content img {
   width:100%;
@@ -453,7 +462,7 @@ ol{
 
 @media only screen and (max-width: 1000px) {
 
-  /* this works */
+  /* typography */
 
       h1{font-size: 36px;}
       h2{font-size: 28px;}
@@ -483,6 +492,15 @@ ol{
       .logo{
         font-weight: 800;
       }
+
+      .top{
+        display: grid;
+        grid-template-columns: minmax(160px, 3fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
+        background-color: #FBBC09;
+        padding: 0 10% 0 10%;
+      }
+
+
       .major-grid{
         display: grid;
         grid-auto-rows: auto;
