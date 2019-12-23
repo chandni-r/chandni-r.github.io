@@ -27,7 +27,30 @@ h5{font-size: 14px; font-weight: 400;}
 h6{font-size: 8px;}
 p,li{font-size: 14px;}
 
-
+.logo{
+  font-size: 18px;
+}
+.left h2{
+  font-size: 24px;
+}
+.title1 h2{
+  font-size: 24px;
+}
+.title2 h2{
+  font-size: 24px;
+}
+.generalbutton{
+  font-size:18px;
+}
+.content h3{
+  font-size: 36px;
+}
+.content p{
+  font-size: 24px;
+}
+.myButton{
+  font-size:18px;
+}
 
 /* link styling */
 
@@ -106,7 +129,6 @@ a:active {
 
 .logo {
   font-weight: 800;
-  font-size: 18px;
 }
 
 .left img{
@@ -126,8 +148,6 @@ a:active {
 .left h2{
   color: #4a4a4a;
   text-align: left;
-  font-size: 24px;
-
 }
 
 /* .main-text a{
@@ -137,7 +157,6 @@ a:active {
 
 /* title 1 */
 .title1 h2{
-  font-size: 24px;
   color: #4a4a4a;
   text-align: center;
   padding: 5%;
@@ -146,7 +165,6 @@ a:active {
 
 }
 .title2 h2{
-  font-size: 24px;
   color: #4a4a4a;
   text-align: center;
   margin: 50px;
@@ -187,8 +205,6 @@ a:active {
 .listset {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  /* grid-column-gap: 5%; */
-  /* grid-row-gap: 5%; */
   padding-left: 10%;
   padding-right: 10%;
 }
@@ -225,7 +241,6 @@ ol{
 .top{
   display: grid;
   grid-template-columns: minmax(160px, 5fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) ;
-  /* grid-template-columns: auto; */
   background-color: #FBBC09;
 }
 
@@ -243,14 +258,12 @@ ol{
 }
 
 .content h3{
-  font-size: 36px;
   text-align: center;
   padding: 5% 5% 3% 5%;
   margin: 0;
 }
 
 .content p{
-  font-size: 24px;
   padding: 7% 25% 2% 25%;
   margin: 0;
 }
@@ -281,7 +294,6 @@ ol{
   width: auto;
 	cursor:pointer;
 	color:#ffffff;
-	font-size:18px;
 	font-weight:bold;
 	padding:18px 18px;
 	text-decoration:none;
@@ -303,7 +315,6 @@ ol{
   width: auto;
 	cursor:pointer;
 	color:#ffffff;
-	font-size:18px;
 	font-weight:bold;
 	padding:18px 18px;
 	text-decoration:none;
@@ -442,28 +453,32 @@ ol{
 
 @media only screen and (max-width: 1000px) {
 
-      h1{font-size: 1.6rem;}
-      h2{font-size: 1.2rem;}
-      h3{font-size: 1rem;}
-      h4{font-size: 0.7rem; font-weight: 800;}
-      h5{font-size: 0.7rem; font-weight: 400;}
-      h6{font-size: 0.8rem;}
-      p,li{font-size: 1.2rem;}
+      h1{font-size: 36px;}
+      h2{font-size: 28px;}
+      h3{font-size: 24px;}
+      h4{font-size: 14px; font-weight: 800;}
+      h5{font-size: 14px; font-weight: 400;}
+      h6{font-size: 14px;}
+      p,li{font-size: 14px;}
 
       .top h3{
-        font-size: 0.5em;
+        font-size: 18px;
       }
       .logo {
         font-weight: 800;
-        font-size: 0.5em;
+        font-size: 18px;
       }
 
       .content p{
-        font-size: 1.2em;
+        font-size: 16px;
       }
 
       .footer p{
-        font-size: .6em;
+        font-size: 14px;
+      }
+
+      .main-text h2{
+        font-size: 16px;
       }
 
       .major-grid{
@@ -486,7 +501,6 @@ ol{
         margin: 15% 0 15% 0;
         text-align: center;
         color: #4a4a4a;
-        /* font-size: 24px; */
       }
       .imageset {
           display: grid;
