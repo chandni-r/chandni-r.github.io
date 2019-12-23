@@ -467,13 +467,11 @@ ol{
         font-size: 12px;
       }
       .top h3{
-        font-size: 24px;
-      }
-
-      .content p{
         font-size: 16px;
       }
-
+      .content p{
+        font-size: 14px;
+      }
       .footer p{
         font-size: 14px;
       }
@@ -481,7 +479,7 @@ ol{
       .main-text h2{
         font-size: 16px;
       }
-      
+
       .logo{
         font-weight: 800;
       }
