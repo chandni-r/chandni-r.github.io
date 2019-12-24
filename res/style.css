@@ -24,15 +24,23 @@ p, a, li {
 h1{font-size: 24px;}
 h2{font-size: 18px;}
 h3{font-size: 16px;}
-h4{font-size: 14px; font-weight: 800;}
+h4{font-size: 16px; font-weight: 800;}
 h5{font-size: 14px; font-weight: 400;}
 h6{font-size: 8px;}
 p,li{font-size: 14px;}
 
+/* .info h4{
+  font-size: 16px;
+}
+.info h5{
+  font-size: 12px;
+} */
 .logo{
   font-size: 18px;
+  /* font-weight: 600; */
 }
-.left h2{
+
+.header h2{
   font-size: 24px;
 }
 .title1 h2{
@@ -53,12 +61,13 @@ p,li{font-size: 14px;}
 .myButton{
   font-size:18px;
 }
-
-/* link styling */
-
 h5, h6, a{
   font-weight: 400;
 }
+
+/* link styling */
+
+
 
 h4, h5{
   margin-top: .5em;
@@ -96,11 +105,11 @@ a:active {
   grid-auto-rows: auto;
 }
 
-.left{
+.header{
   display: grid;
-  grid-template-columns:  repeat(6, 1fr);
+  grid-template-columns:  repeat(5, 1fr);
   grid-template-areas:
-    ". a . b b .";
+    ". a b b .";
 }
 
 .profile{
@@ -111,29 +120,27 @@ a:active {
   grid-area: b;
 }
 
-.left{
+.header{
   position: relative;
   width: 100%
 }
 
-/* left option 2*/
-.left{
+/* header option 2*/
+.header{
   background: #FBBC09;
   padding: 50px 0 70px 0;
 }
 
-.left a{
+.header a{
   color: #fff;
   text-align: center;
   margin: 20px;
   display: block;
 }
 
-.logo {
-  font-weight: 800;
-}
 
-.left img{
+
+.header img{
   border-radius: 150px;
   width: 200px;
   margin: 0 auto;
@@ -147,15 +154,10 @@ a:active {
   padding-right: 10%;
 }
 
-.left h2{
+.header h2{
   color: #4a4a4a;
   text-align: left;
 }
-
-/* .main-text a{
-  color: #fff;
-  font-weight: 400;
-  } */
 
 .divider{
   background-color: #f3f3f3;
@@ -187,11 +189,43 @@ a:active {
   margin: 50px;
 }
 
+/* featured */
+
+.featured {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 0;
+  padding: 2% 10% 5% 10%;
+  background-color: #f3f3f3;
+}
+
+.featured a{
+  display: grid;
+  grid-template-rows: 1fr minmax(1em,auto);
+}
+.featured img{
+  width: 100%;
+  border-radius: 15px 15px 0 0 ;
+}
+.featured ul{
+  margin:0;
+  padding:0;
+  border-radius: 15px;
+  background-color: #ffffff;
+  box-shadow: 0 8px 6px -6px grey;
+  margin-bottom: 10%;
+}
+.featured .info{
+  padding: 15px;
+}
+
+
 /* imageset  option 1*/
 .imageset {
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 5%;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2%;
   grid-row-gap: 0;
   padding: 2% 10% 5% 10%;
   background-color: #f3f3f3;
@@ -216,6 +250,7 @@ a:active {
 .imageset .info{
   padding: 15px;
 }
+
 
 /* architecture */
 .arch {
@@ -251,7 +286,7 @@ a:active {
 }
 .arch img{
   width: 100%;
-  border-radius: 15px;
+  border-radius: 15px ;
 }
 /* segment 3 */
 .listset {
@@ -519,13 +554,16 @@ ol{
 
       h1{font-size: 36px;}
       h2{font-size: 28px;}
-      h3{font-size: 18px;}
-      h4{font-size: 14px; font-weight: 800;}
-      h5{font-size: 14px; font-weight: 400;}
+      h3{font-size: 16px;}
+      h4{font-size: 16px; font-weight: 800;}
+      h5{font-size: 12px; font-weight: 400;}
       h6{font-size: 14px;}
       p,li{font-size: 14px;}
 
-      .info h4, h5 {
+      .info h4 {
+        font-size: 16px;
+      }
+      .info h5{
         font-size: 12px;
       }
       .top h3{
@@ -543,7 +581,7 @@ ol{
       }
 
       .logo{
-        font-weight: 800;
+        /* font-weight: 800; */
       }
       .divider h2{
         font-size: 16px;
@@ -562,7 +600,7 @@ ol{
         grid-auto-rows: auto;
       }
 
-      .left{
+      .header{
         position: relative;
         width: 100%
         display: grid;
@@ -578,6 +616,29 @@ ol{
         text-align: center;
         color: #4a4a4a;
       }
+      /* featured */
+      .featured {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-column-gap: 5%;
+          grid-row-gap: 0;
+          padding: 5% 5% 5% 5%;
+          background-color: #f3f3f3;
+      }
+      .featured ul{
+        margin-bottom: 5%;
+      }
+      .featured img{
+        width: 100%;
+        border-radius: 15px 15px 15px 015px ;
+      }
+      .featured a{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+      }
+
+      /* imageset */
       .imageset {
           display: grid;
           grid-template-columns: 1fr;
