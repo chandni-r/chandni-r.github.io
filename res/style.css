@@ -212,7 +212,42 @@ a:active {
   padding: 15px;
 }
 
+/* architecture */
+.arch {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 0;
+    padding: 2% 5% 2% 5%;
+    background-color: #f3f3f3;
 
+}
+
+/* .arch ul{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+} */
+
+.arch a{
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: 1fr;
+}
+.arch ul{
+  margin: 2% 0 2% 0;
+  padding:0;
+  background-color: #fff;
+  border-radius: 15px;
+  box-shadow: 0 8px 6px -6px grey;
+  /* margin-bottom: 5%; */
+}
+.arch .info{
+  padding: 15px;
+}
+.arch img{
+  width: 100%;
+  border-radius: 15px;
+}
 /* segment 3 */
 .listset {
   display: grid;
@@ -309,8 +344,8 @@ ol{
 }
 
 .small-img {
-  width: 70% !important;
-  margin: 0 15% 0 15%;
+  width: 75% !important;
+  margin: 1% 12.5% 1% 12.5%;
 }
 .myButton {
 	box-shadow:inset 0px 39px 0px -24px #825399;
@@ -546,17 +581,38 @@ ol{
           padding: 5% 5% 5% 5%;
           background-color: #f3f3f3;
       }
-
       .imageset ul{
         margin-bottom: 5%;
       }
-
       .imageset img{
         width: 100%;
         border-radius: 15px 15px 15px 015px ;
       }
-
       .imageset a{
+        display: grid;
+        grid-template-columns: 1fr 2fr;
+        grid-template-rows: 1fr;
+      }
+
+      .arch {
+          display: grid;
+          grid-template-columns: 1fr;
+          grid-column-gap: 5%;
+          grid-row-gap: 0;
+          padding: 5% 5% 5% 5%;
+          background-color: #f3f3f3;
+      }
+
+      .arch ul{
+        margin-bottom: 5%;
+      }
+
+      .arch img{
+        width: 100%;
+        border-radius: 15px 15px 15px 015px ;
+      }
+
+      .arch a{
         display: grid;
         grid-template-columns: 1fr 2fr;
         grid-template-rows: 1fr;
