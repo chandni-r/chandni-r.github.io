@@ -675,8 +675,11 @@ ol{
         border-radius: 15px;
       }
       .videos{
-        margin: 0;
+        margin: 0 auto 0 auto;
         width:100%;
+        width:420;
+        height:235;
+
       }
       .pdf{
         margin: 0;
