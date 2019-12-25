@@ -206,7 +206,7 @@ a:active {
 }
 
 /* big grid */
-.arch,.featured, .talks, .ux {
+.arch, .talks, .ux {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
     grid-column-gap: 2%;
@@ -214,6 +214,14 @@ a:active {
     padding: 2% 5% 2% 5%;
     background-color: #fafafa;
 }
+
+.featured{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  grid-row-gap: 0;
+  padding: 2% 5% 2% 5%;
+  background-color: #fafafa;}
 
 /* inner grid */
 .featured ul, .talks ul, .arch ul, .ux ul{
