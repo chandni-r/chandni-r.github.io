@@ -8,6 +8,7 @@ body{
 
 h1, h2, h3, h4, h5, h6, p, a, li , ul, button{
     font-family: 'Nunito', 'Helvetica', sans-serif;
+    color: #3c3c3c;
 }
 h1, h2, h3, h4,{
   padding-top: 5px;
@@ -74,14 +75,15 @@ h4, h5{
   margin-bottom: .5em;
 }
 
+
 a:link {
-  color: #4aa4c8;
+  color: #e74c3c;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #454545;
+  color: #e74c3c;
   background-color: transparent;
   text-decoration: none;
 }
@@ -96,6 +98,10 @@ a:active {
   color: yellow;
   background-color: transparent;
   text-decoration: underline;
+}
+
+.top a{
+  color: #3c3c3c;
 }
 
 
@@ -342,11 +348,13 @@ ol{
 }
 .about-content h1{
   font-size: 10vw;
-  padding: 25px 15% 25px 15%;
+  padding: 15px 15% 15px 15%;
   margin: 0;
+  font-weight: 800;
+  color: #fff;
 }
 .keywords{
-  background-color:  #7bfdba ;
+  background-color:  #33d782 ;
   margin:0;
   height: 100%;
 }
@@ -382,7 +390,7 @@ ol{
 }
 
 .content a{
-    color: #549091;
+    color: #e74c3c;
 }
 
 .content-imageset {
