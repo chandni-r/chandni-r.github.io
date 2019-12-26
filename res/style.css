@@ -75,13 +75,13 @@ h4, h5{
 }
 
 a:link {
-  color: #404040;
+  color: #4aa4c8;
   background-color: transparent;
   text-decoration: none;
 }
 
 a:visited {
-  color: #404040;
+  color: #454545;
   background-color: transparent;
   text-decoration: none;
 }
@@ -125,6 +125,11 @@ a:active {
 
 .categories{
   grid-area: p;
+}
+
+.top img{
+  width: 64px;
+  height: 64px;
 }
 
 .header{
@@ -299,9 +304,10 @@ ol{
 
 .top{
   display: grid;
-  grid-template-columns: minmax(160px, 8fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
+  grid-template-columns: 1fr 1fr 1fr 1fr  ;
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
+  align-items: center;
 }
 
 
@@ -312,9 +318,41 @@ ol{
 }
 
 .logo{
-     float: left;
+     float: right;
 }
 
+/* About */
+.about-content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  align-items: center;
+}
+.about-content img{
+  width: 100%;
+}
+.about-content h2{
+  padding: 25px 15% 25px 15%;
+  margin: 0;
+  font-size: 3vw;
+}
+.about-content p{
+  font-size: 18px;
+  margin: 25px 15% 25px 15%;
+}
+.about-content h1{
+  font-size: 10vw;
+  padding: 25px 15% 25px 15%;
+  margin: 0;
+}
+.keywords{
+  background-color:  #7bfdba ;
+  margin:0;
+  height: 100%;
+}
+
+
+/* resume */
 #resume-button, #about-button {
   text-align: right;
 }
@@ -564,11 +602,19 @@ ol{
 
       .top{
         display: grid;
-        grid-template-columns: minmax(160px, 3fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
+        grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
         background-color: #FBBC09;
         padding: 0 10% 0 10%;
       }
-
+      .about-content{
+        display: block;
+      }
+      .about-content h2{
+        font-size: 24px;
+      }
+      .keywords{
+        display: none;
+      }
 
       .major-grid{
         display: grid;
