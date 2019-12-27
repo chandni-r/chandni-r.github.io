@@ -622,7 +622,7 @@ ol{
         display: grid;
         grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
         background-color: #FBBC09;
-        padding: 0 10% 0 10%;
+        padding: 0 10% 0 0;
       }
       .about-content{
         display: block;
