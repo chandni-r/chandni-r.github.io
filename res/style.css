@@ -27,7 +27,7 @@ h2{font-size: 18px;}
 h3{font-size: 16px;}
 h4{font-size: 16px; font-weight: 800;}
 h5{font-size: 14px; font-weight: 400;}
-h6{font-size: 8px;}
+h6{font-size: 12px;}
 p,li{font-size: 14px;}
 
 /* .info h4{
@@ -64,6 +64,11 @@ p,li{font-size: 14px;}
 }
 h5, h6, a{
   font-weight: 400;
+}
+
+h6{
+  text-align: center;
+  margin: 0;
 }
 
 /* link styling */
@@ -217,9 +222,17 @@ a:active {
 }
 
 /* big grid */
-.arch, .talks, .ux {
+.arch, .talks {
     display: grid;
     grid-template-columns: 1fr 1fr 1fr;
+    grid-column-gap: 2%;
+    grid-row-gap: 0;
+    padding: 2% 5% 2% 5%;
+    background-color: #fafafa;
+}
+.ux {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
     grid-column-gap: 2%;
     grid-row-gap: 0;
     padding: 2% 5% 2% 5%;
@@ -394,11 +407,22 @@ ol{
   text-align: center;
 }
 
-.content p{
-  padding: 7% 25% 2% 25%;
+.content p, .content li{
+  padding: 2% 25% 2% 25%;
   margin: 0;
+  font-size: 22px;
+}
+.content h4{
+  padding: 2% 25% 2% 25%;
+  margin: 0;
+  font-size: 24px;
 }
 
+.content h6{
+  padding: 0% 25% 2% 25%;
+  margin: 0;
+  font-size: 14px;
+}
 .content a{
     color: #e74c3c;
 }
@@ -414,6 +438,10 @@ ol{
 .small-img {
   width: 75% !important;
   margin: 1% 12.5% 1% 12.5%;
+}
+.smaller-img {
+  width: 50% !important;
+  margin: 1% 25% 1% 25%;
 }
 .myButton {
 	box-shadow:inset 0px 39px 0px -24px #825399;
@@ -713,6 +741,10 @@ ol{
       }
 
       .content p{
+          padding: 5% 5% 5% 5%;
+      }
+
+      .content h4{
           padding: 5% 5% 5% 5%;
       }
 
