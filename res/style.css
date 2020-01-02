@@ -460,8 +460,8 @@ ol{
 .content-imageset {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 0;
-  grid-row-gap: 0;
+  grid-column-gap: 5px;
+  grid-row-gap: 15px;
   padding: 2% 2% 2% 2%;
 }
 
