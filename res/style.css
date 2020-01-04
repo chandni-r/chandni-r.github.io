@@ -125,7 +125,7 @@ a:active {
  border-radius: 10px; /* Rounded corners */
  font-size: 18px; /* Increase font size */
  border-style: solid;
- border-color: #fafafa;
+ border-color: #fcfcfc;
  border-width: thin;
 }
 
@@ -215,7 +215,7 @@ a:active {
 }
 
 .divider{
-  background-color: #fafafa;
+  background-color: #fcfcfc;
   padding: 2% 10% 1% 10%;
 }
 
@@ -251,7 +251,7 @@ a:active {
     grid-column-gap: 2%;
     grid-row-gap: 0;
     padding: 2% 5% 2% 5%;
-    background-color: #fafafa;
+    background-color: #fcfcfc;
 }
 .ux {
     display: grid;
@@ -259,16 +259,13 @@ a:active {
     grid-column-gap: 2%;
     grid-row-gap: 0;
     padding: 2% 5% 2% 5%;
-    background-color: #fafafa;
+    background-color: #fcfcfc;
 }
 
 .featured{
-  /* display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  grid-column-gap: 2%;
-  grid-row-gap: 0; */
   padding: 2% 5% 2% 5%;
-  background-color: #fafafa;}
+  background-color: #fcfcfc;
+}
 
 /* inner grid */
 .featured ul, .talks ul, .arch ul, .ux ul{
