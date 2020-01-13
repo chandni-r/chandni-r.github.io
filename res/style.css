@@ -109,6 +109,9 @@ a:active {
   color: #3c3c3c;
 }
 
+.top-home a{
+  color: #3c3c3c;
+}
 
 
 /* top button */
@@ -143,11 +146,11 @@ a:active {
 
 .header{
   display: grid;
-  grid-template-columns:  repeat(4, 1fr);
+  grid-template-columns:  repeat(3, 1fr);
   grid-template-rows: 3fr 1fr;
   grid-template-areas:
-    ". b b ."
-    ". p p .";
+    "a b b "
+    "p p p ";
   align-items: center;
 }
 
@@ -163,28 +166,13 @@ a:active {
   grid-area: p;
 }
 
-.top img{
-  width: 64px;
-  height: 64px;
-}
-
-.header{
-  position: relative;
-  width: 100%
-}
-
-/* header option 2*/
-.header{
-  background: #FBBC09;
-  padding: 50px 0 70px 0;
-}
-
-.header img{
-  border-radius: 150px;
-  width: 200px;
-  margin: 0 auto;
-  display: flex;
-  align-items: center;
+.profile h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 900;
+  color: #fff;
+  text-align: right;
+  padding: 0 10% 0 10%;
 }
 
 .main-text{
@@ -197,6 +185,32 @@ a:active {
   color: #4a4a4a;
   text-align: left;
 }
+
+.top img{
+  width: 64px;
+  height: 64px;
+}
+.top-home img{
+  width: 64px;
+  height: 64px;
+}
+
+.header{
+  position: relative;
+  width: 100%;
+  background: #FBBC09;
+  padding: 50px 0 70px 0;
+}
+
+.header img{
+  border-radius: 150px;
+  width: 200px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+}
+
+
 
 .categories{
   display: grid;
@@ -404,14 +418,18 @@ ol{
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
   align-items: center;
+  color: #404040;
 }
 
-
-.top {
-   color: #404040;
-
-   /* padding-left: 20px; */
+.top-home{
+  display: grid;
+  grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
+  background-color: #FBBC09;
+  padding: 0 10% 0 10%;
+  align-items: center;
+  color: #404040;
 }
+
 
 .logo{
      float: right;
@@ -702,6 +720,9 @@ ol{
       .top h3{
         font-size: 16px;
       }
+      .top-home h3{
+          font-size: 16px;
+      }
       .content p{
         font-size: 14px;
       }
@@ -711,7 +732,6 @@ ol{
       .footer p{
         font-size: 14px;
       }
-
       .main-text h2{
         font-size: 18px;
       }
@@ -720,7 +740,7 @@ ol{
         /* font-weight: 800; */
       }
       .divider h2{
-        font-size: 16px;
+        font-size: 22px;
       }
 
       .top{
@@ -749,7 +769,7 @@ ol{
       }
       .main-text h2{
         margin: 15% 0 15% 0;
-        text-align: center;
+        text-align: left;
         color: #4a4a4a;
       }
 
@@ -763,7 +783,7 @@ ol{
         padding: 1% auto 1% auto;
       }
       .categories a{
-        border: 1px solid #f7f7f7;
+        border: .3px solid #fff;
         border-radius: 10px;
         box-shadow: 0 6px 6px -6px rgba(103, 103, 103, 0.5);
         margin: 2%;
