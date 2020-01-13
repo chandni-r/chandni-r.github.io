@@ -147,10 +147,9 @@ a:active {
 .header{
   display: grid;
   grid-template-columns:  repeat(3, 1fr);
-  grid-template-rows: 3fr 1fr;
+  /* grid-template-rows: 3fr 1fr; */
   grid-template-areas:
-    "a b b "
-    "p p p ";
+    "a b b ";
   align-items: center;
 }
 
@@ -230,6 +229,48 @@ a:active {
   /* background-color: #fff; */
   text-align: center;
 }
+
+/* re-organised project display */
+.cat-1 {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-column-gap: 3%;
+  grid-row-gap: 0;
+  padding: 2% 15% 2% 15%;
+}
+
+.cat-title h2{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 32px;
+  font-weight: 900;
+}
+
+.cat-project{
+  margin:0;
+  padding:0;
+  border-radius: 2px;
+  background-color: #ffffff;
+  /* box-shadow: 0 6px 6px -6px #E1E1E1; */
+  -ms-transition: 0.1s ease-in-out;
+  -webkit-transition: 0.1s ease-in-out;
+  transition: 0.1s ease-in-out;
+}
+
+.cat-project:hover{
+  -ms-transform: rotate(1deg); /* IE 9 */
+  -webkit-transform: rotate(1deg); /* Chrome, Safari, Opera */
+  transform: rotate(1deg);
+}
+.cat-project img{
+  width: 100%;
+  border-radius: 2px;
+}
+
+.PD{
+  /* background-color: #000; */
+}
+
+/*  */
 
 .divider{
   background-color: #fcfcfc;
@@ -423,11 +464,15 @@ ol{
 
 .top-home{
   display: grid;
-  grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
+  grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
   align-items: center;
   color: #404040;
+}
+
+.top-home h3{
+  text-align: right;
 }
 
 
