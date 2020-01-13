@@ -272,21 +272,6 @@ a:active {
 
 /*  */
 
-.divider{
-  background-color: #fcfcfc;
-  padding: 2% 10% 1% 10%;
-}
-
-.divider h2{
-  display: block;
-  text-align: center;
-}
-
-.divider h5{
-  display: block;
-  text-align: center;
-}
-
 /* title 1 */
 .title1 h2{
   color: #4a4a4a;
@@ -837,11 +822,18 @@ ol{
         /* background-color: #fff; */
         text-align: center;
       }
-
-
-      .profile{
-        grid-area: a;
+      .cat-1 {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+        grid-column-gap: 3%;
+        grid-row-gap: 0;
+        padding: 2% 15% 2% 15%;
       }
+      .cat-project{
+        padding: 2%;
+      }
+
 
       /* grids */
       .arch a, .talks a,  .ux a{
