@@ -1,15 +1,13 @@
-
 body{
   margin:0;
 }
 
-
 /* text styling */
-
 h1, h2, h3, h4, h5, h6, p, a, li , ul, button{
     font-family: 'Nunito', 'Helvetica', sans-serif;
     color: #3c3c3c;
 }
+
 h1, h2, h3, h4,{
   padding-top: 5px;
   padding-bottom: 5px;
@@ -381,11 +379,8 @@ a:active {
 }
 .featured a{
   display: grid;
-  grid-template-columns: 2fr 2fr;
-  grid-template-rows: 1fr;
-  align-items: baseline;
+  grid-template-columns: 1fr 1fr;
   grid-column-gap: 10%;
-
 }
 
 /* images */
@@ -780,13 +775,22 @@ ol{
         padding: 0 10% 0 0;
       }
       .about-content{
-        display: block;
+        display: grid;
+        grid-template-columns:1fr;
       }
+
       .about-content h2{
         font-size: 24px;
       }
+
       .keywords{
-        display: none;
+        margin: 0;
+      }
+      .keywords h1{
+        font-size: 32px;
+      }
+      .keywords h4{
+        font-size: 18px;
       }
 
       .major-grid{
