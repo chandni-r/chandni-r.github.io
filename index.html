@@ -60,19 +60,19 @@
 
   <!-- featured -->
   <div class="featured">
-    <ul>
-      <a href="U20_Tactopus.html" target="_blank">
-        <img src="res/U20_Tactopus/ch_0.jpg">
+        <!-- <img src="res/U20_Tactopus/ch_0.jpg"> -->
+        <div class="w3-content w3-display-container" style="max-width:800px">
+            <a href="U20_Tactopus.html" target="_blank"><img class="mySlides" src="res/U20_Tactopus/ch_slider1.jpg" style="width:100%"></a>
+            <a href="U20_Tactopus.html" target="_blank"><img class="mySlides" src="res/U20_Tactopus/ch_slider2.jpg" style="width:100%"></a>
+            <a href="U20_Tactopus.html" target="_blank"><img class="mySlides" src="res/U20_Tactopus/ch_slider3.jpg" style="width:100%"></a>
+            <a href="U20_Tactopus.html" target="_blank"><img class="mySlides" src="res/U20_Tactopus/ch_slider4.jpg" style="width:100%"></a>
+        </div>
         <span class="info">
           <h5 class="info-tags"> startup, founder, game design, learning design </h5>
           <h4 class="info-title" >Tactopus<br>An Inclusive Ed-tech Startup</h4>
           <h5>A play-based, early learning startup I founded during design school in response to accessibility issues I encountered during research.  <br><br> Tactopus makes playful mixed-reality learning aids that include children with disabilities in the learning process.  <br> <br>
           Over the past 4 years, it has grown into a team of ten, working with schools, teachers, families and children globally.</h5>
-
         </span>
-      </a>
-
-    </ul>
 
   </div>
 
@@ -307,10 +307,28 @@
 
 
     <!-- footer -->
-<div class="footer">
+    <div class="footer">
       <p> If you'd like to collaborate, discuss projects, or if you find a typo in these pages, please write to me. chandni@tuta.io
       <br>  &copy; Chandni Rajendran</p>
     </div>
+
+
+    <script>
+    var myIndex = 0;
+    carousel();
+
+    function carousel() {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      myIndex++;
+      if (myIndex > x.length) {myIndex = 1}
+      x[myIndex-1].style.display = "block";
+      setTimeout(carousel, 2000); // Change image every 2 seconds
+    }
+    </script>
 
 
 

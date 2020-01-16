@@ -303,10 +303,6 @@ a:active {
     background-color: #fcfcfc;
 }
 
-.featured, .talks, .ux, .arch {
-  padding: 2% 15% 2% 15%;
-  background-color: #fcfcfc;
-}
 
 .info-title{
   font-family: 'Montserrat', sans-serif;
@@ -331,72 +327,18 @@ a:active {
   font-weight: 600;
 }
 
-/* inner grid */
-.featured ul, .talks ul, .arch ul, .ux ul{
-  margin:0;
-  padding:0;
-  border-radius: 2px;
-  background-color: #ffffff;
-  box-shadow: 0 6px 6px -6px #E1E1E1;
-  -ms-transition: 0.1s ease-in-out;
-  -webkit-transition: 0.1s ease-in-out;
-  transition: 0.1s ease-in-out;
-}
 
-.featured ul{
-  margin-bottom: 0;
-}
-.talks ul, .arch ul, .ux ul{
-  margin-bottom: 10%;
-}
-.talks ul:hover {
-    -ms-transform: rotate(2deg); /* IE 9 */
-    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
-    transform: rotate(2deg);
-}
-.ux ul:hover {
-    -ms-transform: rotate(2deg); /* IE 9 */
-    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
-    transform: rotate(2deg);
-}
-.arch ul:hover {
-    -ms-transform: rotate(2deg); /* IE 9 */
-    -webkit-transform: rotate(2deg); /* Chrome, Safari, Opera */
-    transform: rotate(2deg);
-}
-
-/* inner grid */
- .ux a, .talks a{
-  display: grid;
-  grid-template-rows: 1fr minmax(1em,auto);
-}
-
-.arch a {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  grid-template-rows: 1fr;
-  align-items: center;
-}
-.featured a{
+.featured {
   display: grid;
   grid-template-columns: 1fr 1fr;
-  grid-column-gap: 10%;
+  grid-column-gap: 2%;
+  margin: 2% 15% 2% 15%;
 }
 
 /* images */
 .featured img{
   width: 100%;
   border-radius: 2px ;
-}
-.talks img, .arch img{
-  width: 90%;
-  border-radius: 2px ;
-  margin: 5%;
-}
-
-.ux img{
-  width: 100%;
-  border-radius: 2px;
 }
 
 .info {
@@ -722,6 +664,13 @@ ol{
 .test-text{
   font-style: italic;
 }
+
+
+/* slider */
+.mySlides {display:none}
+.w3-left, .w3-right, .w3-badge {cursor:pointer}
+.w3-badge {height:13px;width:13px;padding:0}
+
 /* smaller screen properties */
 
 @media only screen and (max-width: 1000px) {
@@ -852,7 +801,6 @@ ol{
         grid-template-rows: auto;
         grid-template-columns: 1fr;
         align-items: center;
-
       }
       .featured, .ux, .talks, .arch {
           display: grid;
