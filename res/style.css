@@ -209,6 +209,7 @@ a:active {
 
 
 
+
 .categories{
   display: grid;
   grid-template-columns: repeat(3, auto);
@@ -264,11 +265,6 @@ a:active {
   border-radius: 2px;
 }
 
-.PD{
-  /* background-color: #000; */
-}
-
-/*  */
 
 /* title 1 */
 .title1 h2{
@@ -285,23 +281,7 @@ a:active {
   margin: 50px;
 }
 
-/* big grid */
-.arch, .talks {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
-    grid-column-gap: 2%;
-    grid-row-gap: 0;
-    padding: 2% 5% 2% 5%;
-    background-color: #fcfcfc;
-}
-.ux {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    grid-column-gap: 3%;
-    grid-row-gap: 0;
-    padding: 2% 5% 2% 5%;
-    background-color: #fcfcfc;
-}
+
 
 
 .info-title{
@@ -344,6 +324,9 @@ a:active {
 .info {
   margin: 5%;
 }
+
+
+
 
 
 /* footer */
@@ -400,6 +383,48 @@ ol{
 
 .logo{
      float: right;
+}
+
+/* pages */
+.page-top{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  padding: 5%;
+
+}
+
+
+.page-top h2{
+  text-align: right;
+  padding: 5% 5% 3% 5%;
+  margin: 0;
+  color: #fff;
+  font-family: 'Montserrat', sans-serif;
+  font-size: 48px;
+  font-weight: 600;
+}
+
+.page-top h4{
+  text-align: left;
+  padding: 5% 25% 3% 5%;
+  margin: 0;
+  font-weight: 400;
+  font-size: 24px;
+}
+
+.info-tags-white{
+    font-family: 'Courier Prime', monospace;
+    color: #fff;
+    font-size: 16px;
+}
+
+
+/* colors */
+.green {
+    background-color: #8ec340;
+}
+.blue {
+    background-color: #3789a8;
 }
 
 /* About */
