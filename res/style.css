@@ -390,7 +390,6 @@ ol{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5%;
-
 }
 
 
@@ -814,12 +813,6 @@ ol{
 
 
       /* grids */
-      .arch a, .talks a,  .ux a{
-          display: grid;
-          grid-template-columns: 1fr 3fr;
-          grid-template-rows: 1fr;
-          align-items: center;
-      }
 
       .featured a{
         display: grid;
@@ -827,23 +820,27 @@ ol{
         grid-template-columns: 1fr;
         align-items: center;
       }
-      .featured, .ux, .talks, .arch {
+      .featured {
           display: grid;
           grid-template-columns: 1fr;
           grid-column-gap: 5%;
           grid-row-gap: 0;
           padding: 5% 5% 5% 5%;
       }
-      .featured ul, .ux ul, .arch ul, .talks ul{
+      .featured ul{
         margin-bottom: 5%;
       }
-      .featured img, .ux img, .arch img, .talks img{
+      .featured img{
         width: 100%;
         border-radius: 5px ;
         margin: 5%;
       }
 
-
+      .page-top{
+        display: grid;
+        grid-template-columns: 1fr;
+        padding: 5%;
+      }
 
       .content-imageset {
         display: grid;
