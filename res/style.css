@@ -54,6 +54,9 @@ p,li{font-size: 14px;}
 .content h3{
   font-size: 36px;
 }
+.content h2{
+  font-size: 36px;
+}
 .content p{
   font-size: 24px;
 }
@@ -107,6 +110,10 @@ a:active {
   color: #3c3c3c;
 }
 
+.top h3{
+  float: right;
+}
+
 .top-home a{
   color: #3c3c3c;
 }
@@ -127,9 +134,10 @@ a:active {
  padding: 5px 35px 5px 35px; /* Some padding */
  border-radius: 10px; /* Rounded corners */
  font-size: 18px; /* Increase font size */
- border-style: solid;
+ box-shadow: 5px 5px 5px -5px rgba(45, 45, 45, 0.5);
+ /* border-style: solid;
  border-color: #fcfcfc;
- border-width: thin;
+ border-width: thin; */
 }
 
 #topbtn:hover {
@@ -145,6 +153,7 @@ a:active {
 .header{
   display: grid;
   grid-template-columns:  repeat(3, 1fr);
+  padding: 10% 0 10% 0;
   /* grid-template-rows: 3fr 1fr; */
   grid-template-areas:
     "a b b ";
@@ -173,9 +182,8 @@ a:active {
 }
 
 .main-text{
-  max-width: 80%;
-  padding-left: 10%;
-  padding-right: 10%;
+  max-width: 60%;
+  padding: 5% 15% 5% 10%;
 }
 
 .header h2{
@@ -196,7 +204,6 @@ a:active {
   position: relative;
   width: 100%;
   background: #FBBC09;
-  padding: 50px 0 70px 0;
 }
 
 .header img{
@@ -212,21 +219,29 @@ a:active {
 
 .categories{
   display: grid;
-  grid-template-columns: repeat(3, auto);
-  background: #FBBC09;
-  align-items: center;
-  padding: 1% 10% 1% 10%;
+  grid-template-columns: repeat(7, 1fr);
+  padding: 0;
+  width: 100%;
+  /* border-top: 0.5px solid #fff; */
 }
 .categories a{
-  border: 0.3px solid #fff;
+  border-radius: 5px;
+  margin: 1%;
+  padding: 7px;
+  color: #fff;
+  font-weight: 800;
+}
+.categories h3{
+    text-align: center;
+}
 
-  border-radius: 15px;
-  box-shadow: 0 6px 6px -6px rgba(103, 103, 103, 0.5);
-  margin: 2%;
-  padding: 15px;
-  color: #4a4a4a;
-  /* background-color: #fff; */
-  text-align: center;
+
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 999;
+  padding: 0;
 }
 
 /* re-organised project display */
@@ -235,20 +250,21 @@ a:active {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 3%;
   grid-row-gap: 0;
-  padding: 2% 15% 2% 15%;
+  padding: 10% 15% 10% 15%;
 }
 
 .cat-title h2{
   font-family: 'Montserrat', sans-serif;
   font-size: 32px;
   font-weight: 900;
+  color: #4a4a4a;
 }
 
 .cat-project{
   margin:0;
   padding:0;
   border-radius: 2px;
-  background-color: #ffffff;
+  /* background-color: #ffffff; */
   /* box-shadow: 0 6px 6px -6px #E1E1E1; */
   -ms-transition: 0.1s ease-in-out;
   -webkit-transition: 0.1s ease-in-out;
@@ -265,6 +281,145 @@ a:active {
   border-radius: 2px;
 }
 
+.TA{
+  background-color: #3a5844;
+  padding: 10% 15% 10% 15%;
+}
+
+.TA h2{
+  color: #fff;
+}
+.TA h4{
+    color: #fff;
+}
+.TA h5{
+  color: #fff;
+}
+
+hr{
+  border: 0.5px solid #b1d626;
+  border-radius: 5px;
+}
+
+
+/* portfolio colors */
+/*
+.PD{
+  background-image: linear-gradient(#abd882, #caf3b9);
+}
+.GD{
+  background-image: linear-gradient(#caf3b9, #a0efc0);
+}
+.RES{
+  background-image: linear-gradient(#a0efc0, #a0bcef);
+}
+.ID{
+    background-image: linear-gradient(#a0bcef, #b2a0ef);
+}
+.InD{
+      background-image: linear-gradient( #b2a0ef, #ecbcf5);
+}
+.GDI{
+    background-image: linear-gradient(#ecbcf5, #f5bcdf);
+}
+.Ex{
+  background-image: linear-gradient(#f5bcdf, #f5bcda);
+}
+.RD{
+  background-image: linear-gradient(#f5bcda, #f5bcc5);
+}
+.UD{
+  background-image: linear-gradient( #f5bcc5, #dacdcf);
+} */
+
+/* home page styling */
+
+.cat-title h1{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 28px;
+  font-weight: 900;
+  color: #3c3c3c;
+  text-align: center;
+  padding: 5%;
+  margin: 0;
+}
+.home-1, .home-3{
+  display: grid;
+  grid-template-columns: 1fr .5fr;
+}
+.home-2{
+  display: grid;
+  grid-template-columns: .5fr 1fr ;
+}
+
+.home-4{
+  display: grid;
+  grid-template-columns: .5fr 1.5fr;
+}
+
+.more-buttons{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 2%;
+  padding: 0px 30% 8% 30%;
+}
+
+.more-buttons button{
+  background-color: #2f9fd3;
+  color: #fff;
+}
+
+.sample{
+  padding: 2% 15% 2% 15%;
+}
+.sample img{
+  width:100%;
+}
+.home-info{
+  margin: 2% 10% 5% 2%;
+}
+.home-info h4{
+  font-family: 'Montserrat', sans-serif;
+  font-size: 22px;
+  font-weight: 900;
+}
+.home-info h5{
+
+}
+.home-button{
+  margin:2% 0 2% 0;
+  background-color: #f7524b;
+  border-radius: 5px;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  font-size: 22px ;
+  font-weight: 900;
+  border: none;
+}
+.port-button{
+  align-content: center;
+  background-color: #f7524b;
+  border-radius: 5px;
+  display: inline-block;
+  width: auto;
+  cursor: pointer;
+  font-weight: bold;
+  padding: 10px;
+  color: #fff;
+  font-size: 22px ;
+  font-weight: 900;
+  border: none;
+  margin: 5% 0 5% 0;
+}
+
+.left-info{
+  padding-left: 15%;
+}
+
 
 /* title 1 */
 .title1 h2{
@@ -273,7 +428,6 @@ a:active {
   padding: 5%;
   margin:0;
   background-color: #f3f3f3;
-
 }
 .title2 h2{
   color: #4a4a4a;
@@ -334,12 +488,11 @@ a:active {
 .footer{
   text-align: center;
   background-color: #FBBC09;
-  padding-top: 50px;
   width: 100%
 }
 
 .footer p{
-  padding: 30px;
+  padding: 6% 30% 3% 30%;
   margin: 0;
 }
 
@@ -360,7 +513,7 @@ ol{
 
 .top{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr  ;
+  grid-template-columns: repeat(5, 1fr) ;
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
   align-items: center;
@@ -369,7 +522,7 @@ ol{
 
 .top-home{
   display: grid;
-  grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
+  grid-template-columns: minmax(64px, 3fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) ;
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
   align-items: center;
@@ -377,12 +530,12 @@ ol{
 }
 
 .top-home h3{
+  float: right;
   text-align: right;
 }
-
-
-.logo{
-     float: right;
+.top h3{
+  float: right;
+  text-align: right;
 }
 
 /* pages */
@@ -390,6 +543,7 @@ ol{
   display: grid;
   grid-template-columns: 1fr 1fr;
   padding: 5%;
+  min-height: 40vh;
 }
 
 
@@ -400,12 +554,12 @@ ol{
   color: #fff;
   font-family: 'Montserrat', sans-serif;
   font-size: 48px;
-  font-weight: 600;
+  font-weight: 800;
 }
 
 .page-top h4{
   text-align: left;
-  padding: 5% 25% 3% 5%;
+  padding: 5% 25% 15% 5%;
   margin: 0;
   font-weight: 400;
   font-size: 24px;
@@ -422,9 +576,31 @@ ol{
 .green {
     background-color: #8ec340;
 }
-.blue {
-    background-color: #3789a8;
+.deep-green {
+    background-color: #97ce44;
 }
+.blue {
+    background-color: #45a6ca;
+}
+.light-blue {
+    background-color: #8bd9fc;
+}
+.white{
+  background-color: #fff;
+}
+.white h2{
+  color: #3c3c3c;
+}
+.yellow{
+  background-color: #FBBC09;
+}
+.neon{
+  background-color: #53ef66
+}
+.fresh{
+  background-color: #b1d626;
+}
+
 
 /* About */
 .about-content{
@@ -470,9 +646,6 @@ ol{
 
 
 /* resume */
-#resume-button, #about-button {
-  text-align: right;
-}
 
 .content img {
   width:100%;
@@ -483,6 +656,14 @@ ol{
   padding: 5% 5% 3% 5%;
   margin: 0;
 }
+ .content h2{
+   text-align: left;
+   padding: 2% 25% 0 25%;
+   margin: 0;
+   font-family: 'Montserrat', sans-serif;
+   font-size: 24px;
+   font-weight: 600;
+ }
 
 .content .generalbutton {
   text-align: center;
@@ -494,9 +675,10 @@ ol{
 }
 
 .content p, .content li{
-  padding: 2% 25% 2% 25%;
+  padding: 1% 25% 1% 25%;
   margin: 0;
   font-size: 22px;
+
 }
 .content h4{
   padding: 2% 25% 2% 25%;
@@ -560,7 +742,6 @@ ol{
   margin: 1% 30% 1% 25%;
   width: auto;
 	cursor:pointer;
-	color:#ffffff;
 	font-weight:bold;
 	padding:18px 18px;
 	text-decoration:none;
@@ -735,17 +916,27 @@ ol{
       }
 
       .logo{
-        /* font-weight: 800; */
+        font-weight: 900;
       }
       .divider h2{
         font-size: 22px;
       }
 
+      .TA h2{
+        font-size: 32px;
+      }
+      .TA h4{
+        font-size: 22px;
+      }
+      .TA h5{
+        font-size: 16px;
+      }
+
       .top{
-        display: grid;
+        /* display: grid;
         grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
         background-color: #FBBC09;
-        padding: 0 10% 0 0;
+        padding: 0 10% 0 0; */
       }
       .about-content{
         display: grid;
@@ -774,30 +965,53 @@ ol{
       .header{
         display: block;
       }
+      .page-top h2{
+        text-align: left;
+      }
       .main-text h2{
         margin: 15% 0 15% 0;
         text-align: left;
         color: #4a4a4a;
       }
 
+      .top-home, .top{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas:
+          "p t"
+          "p q"
+          "p r"
+          "p s";
+      }
+
+      .top-home h3{
+        margin: 2% 0 0 0;
+        float: right;
+      }
+      .top h3{
+        margin: 2% 0 0 0;
+        float: right;
+      }
+
+      .logo{
+        grid-area: p;
+      }
+      #home-button{
+        grid-area: t;
+      }
+      #port-button{
+        grid-area: q;
+      }
+      #resume-button{
+        grid-area: r;
+      }
+      #about-button{
+        grid-area: s;
+      }
+
 /* menu styling */
       .categories{
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(3, auto);
-        background: #FBBC09;
-        align-items: center;
-        padding: 1% auto 1% auto;
-      }
-      .categories a{
-        border: .3px solid #fff;
-        border-radius: 10px;
-        box-shadow: 0 6px 6px -6px rgba(103, 103, 103, 0.5);
-        margin: 2%;
-        padding: 3%;
-        color: #4a4a4a;
-        /* background-color: #fff; */
-        text-align: center;
+        display: none;
       }
       .cat-1 {
         display: grid;
@@ -805,7 +1019,7 @@ ol{
         grid-template-rows: auto;
         grid-column-gap: 3%;
         grid-row-gap: 0;
-        padding: 2% 15% 2% 15%;
+        padding: 2% 20% 2% 20%;
       }
       .cat-project{
         padding: 2%;
@@ -902,5 +1116,34 @@ ol{
       .pdf{
         margin: 0;
         width:100%;
+      }
+
+      .home-1, .home-2, .home-3, .home-4{
+        align-items: center;
+      }
+      .sample .info-tags{
+        display: none;
+      }
+      .sample h5{
+        display: none;
+      }
+      .sample button{
+        display: none;
+      }
+      .more-buttons {
+          display: grid;
+          grid-template-columns: 1fr 1fr 1fr;
+          grid-row-gap: 2%;
+          padding: 5% 5% 15% 5%;
+      }
+      .home-info h4 {
+          font-family: 'Montserrat', sans-serif;
+          font-size: 18px;
+          font-weight: 600;
+      }
+
+      .footer p{
+        padding: 6% 10% 8% 10%;
+        margin: 0;
       }
 }
