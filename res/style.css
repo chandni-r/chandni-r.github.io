@@ -340,28 +340,42 @@ hr{
   font-weight: 900;
   color: #3c3c3c;
   text-align: center;
-  padding: 5%;
+  padding: 3%;
   margin: 0;
 }
-.home-1, .home-3{
+.home-1{
   display: grid;
   grid-template-columns: 1fr .5fr;
 }
-.home-2{
+
+.home-2, .home-3{
   display: grid;
-  grid-template-columns: .5fr 1fr ;
+  grid-template-columns: 1fr 1fr ;
+  align-items: center;
 }
 
 .home-4{
   display: grid;
   grid-template-columns: .5fr 1.5fr;
+    align-items: center;
+}
+
+.more{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  /* grid-column-gap: 2%; */
+  padding: 2% 20% 10% 20%;
 }
 
 .more-buttons{
   display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  grid-column-gap: 2%;
-  padding: 0px 30% 8% 30%;
+  grid-template-rows: minmax(3vh, auto) 1fr;
+  padding: 0px 5% 0% 5%;
+  text-align: center;
+
+}
+.more-buttons p{
+  margin: 0;
 }
 
 .more-buttons button{
@@ -386,6 +400,11 @@ hr{
 .home-info h5{
 
 }
+.button a{
+  color: #fff;
+  text-align: center;
+  margin:0;
+}
 .home-button{
   margin:2% 0 2% 0;
   background-color: #f7524b;
@@ -401,8 +420,7 @@ hr{
   border: none;
 }
 .port-button{
-  align-content: center;
-  background-color: #f7524b;
+  background-color: #46acda;
   border-radius: 5px;
   display: inline-block;
   width: auto;
@@ -413,7 +431,8 @@ hr{
   font-size: 22px ;
   font-weight: 900;
   border: none;
-  margin: 5% 0 5% 0;
+  /* margin: 5% 0 5% 0; */
+  text-align: center;
 }
 
 .left-info{
@@ -1130,9 +1149,21 @@ ol{
       .sample button{
         display: none;
       }
+      .cat-title{
+        padding: 20% 15% 10% 15%;
+      }
+      .button a{
+        font-size: 16px;
+      }
+      .more{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr 1fr 1fr;
+        padding: 2% 2% 10% 2%;
+      }
       .more-buttons {
           display: grid;
-          grid-template-columns: 1fr 1fr 1fr;
+          grid-template-columns: 1fr 1fr;
           grid-row-gap: 2%;
           padding: 5% 5% 15% 5%;
       }
