@@ -12,7 +12,7 @@
   </script>
 
 <meta charset="UTF-8">
-<title>Chandni's Interweb Home </title>
+<title>Resume </title>
   <link rel="stylesheet" type="text/css" href="res/style.css">
   <link href="https://fonts.googleapis.com/css?family=Nunito&display=swap" rel="stylesheet">
   <link rel="icon" href="res/fav.png" type="image/gif" sizes="16x16">
@@ -22,12 +22,13 @@
 
 
 <body>
-
+ <a name="page"> </a>
   <!-- menu bar standard -->
   <div class ="top">
       <a href="index.html"> <img  src="res/About/logo2.png"></a>
       <h3 id = "home-button" > <a href="index.html" class="logo"> <b>Chandni Rajendran </b></a> </h3>
       <h3 id = "port-button"> <a href="portfolio.html"> portfolio </a></h3>
+      <h3 id = "talk-button"> <a href="talks.html"> talks </a></h3>
       <h3 id = "resume-button"> <a href="resume.html"> resume </a></h3>
       <h3 id = "about-button"> <a href="about.html">about </a> </h3>
   </div>
@@ -38,8 +39,24 @@
     </div>
   </div>
 
+  <div>
+    <a  id="topbtn" href="#page">  ^  </a>
+  </div>
+
+  <!-- categories jump -->
+  <div class="content"></div>
+  <div class="categories res catheader deep-yellow" id="myHeader" >
+    <h3><a href="#PD">Past Work</a></h3>
+    <h3><a href="#GD">Internships </a></h3>
+    <h3><a href="#ID">Education </a></h3>
+    <h3><a href="#WD">Recognition</a></h3>
+    <h3><a href="#GDI">Talks</a></h3>
+    <h3><a href="#EX">+</a></h3>
+  </div>
+
 <div class="resume-elements">
     <!-- work-ex -->
+    <a name="PD"> </a>
     <div class="work-ex">
       <div class="resume-left">
         <p class="resume-left-title"> Past Work</p>
@@ -99,6 +116,7 @@
       </div>
     </div>
   <!-- internships -->
+  <a name="GD"> </a>
     <div class="internships">
       <div class="resume-left">
         <p class="resume-left-title">Internships</p>
@@ -119,6 +137,7 @@
       </div>
     </div>
   <!-- education -->
+  <a name="ID"> </a>
     <div class="education">
       <div class="resume-left">
         <p class="resume-left-title">Education</p>
@@ -139,6 +158,7 @@
       </div>
     </div>
   <!-- awards -->
+  <a name="WD"> </a>
     <div class="awards">
       <div class="resume-left">
         <p class="resume-left-title">Recognition, <br> Awards</p>
@@ -180,9 +200,10 @@
       </div>
     </div>
   <!-- speaking -->
+  <a name="GDI"> </a>
     <div class="speaking">
       <div class="resume-left">
-        <p class="resume-left-title">Speaking</p>
+        <p class="resume-left-title">Talks</p>
       </div>
       <div class="resume-detail-1">
         <p class="resume-item-title">TEDx IIT Bombay<br><a href="https://www.ted.com/talks/ms_chandni_rajendran_inclusive_design_a_multi_sensory_approach" target="_blank">TED site</a></p>
@@ -228,6 +249,7 @@
     </div>
 
     <!-- Fellowahips -->
+    <a name="EX"> </a>
       <div class="fellowships">
         <div class="resume-left">
           <p class="resume-left-title"> Fellowships<br>Accelerators<br>Cohorts</p>
@@ -257,31 +279,38 @@
 </div>
 
 <!-- footer -->
-<div class="footer">
-  <p> Reach me at chandni@tuta.io
-  <br>  &copy; Chandni Rajendran</p>
+<div class="footer ">
+  <div class = "footer-1">
+    <p> <a href="portfolio.html"> Portfolio </a> <br>
+    <a href="about.html"> About</a> </p>
+  </div>
+  <div class = "footer-2">
+    <p> <a href="portfolio.html"> LinkedIn </a> <br>
+      <a> chandni@tuta.io </a>
+    </p>
+  </div>
+  <div class = "footer-3">
+    <p> Website developed from scratch, with joy.
+    <br>  &copy; Chandni Rajendran</p>
+  </div>
 </div>
-
 
 
 </body>
 
 <script>
-function myFunction() {
-  var dots = document.getElementById("dots");
-  var moreText = document.getElementById("more");
-  var btnText = document.getElementById("moreBtn");
+    window.onscroll = function() {myFunction()};
 
-  if (dots.style.display === "none") {
-    dots.style.display = "inline";
-    btnText.innerHTML = "Read more";
-    moreText.style.display = "none";
-  } else {
-    dots.style.display = "none";
-    btnText.innerHTML = "Less";
-    moreText.style.display = "inline";
-  }
-}
+    var catheader = document.getElementById("myHeader");
+    var sticky = catheader.offsetTop;
+
+    function myFunction() {
+      if (window.pageYOffset > sticky) {
+        catheader.classList.add("sticky");
+      } else {
+        catheader.classList.remove("sticky");
+      }
+    }
 </script>
 
 </html>

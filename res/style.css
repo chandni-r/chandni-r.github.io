@@ -214,12 +214,9 @@ a:active {
   align-items: center;
 }
 
-
-
-
 .categories{
   display: grid;
-  grid-template-columns: repeat(7, 1fr);
+  grid-template-columns: repeat(8, 1fr);
   padding: 0;
   width: 100%;
   /* border-top: 0.5px solid #fff; */
@@ -235,6 +232,11 @@ a:active {
     text-align: center;
 }
 
+.res{
+    grid-template-columns: repeat(6, 1fr);
+
+}
+
 
 .sticky {
   position: fixed;
@@ -245,12 +247,31 @@ a:active {
 }
 
 /* re-organised project display */
+.talks-page {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 3%;
+  grid-row-gap: 0;
+  padding: 10% 15% 10% 15%;
+}
 .cat-1 {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 3%;
   grid-row-gap: 0;
   padding: 10% 15% 10% 15%;
+}
+.cat-talks {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-column-gap: 3%;
+  grid-row: minmax(30%, auto);
+  padding: 5% 15% 5% 15%;
+}
+.cat-talks .videos{
+  margin:0;
+  width:100%;
+  height: 100%;
 }
 
 .cat-title h2{
@@ -505,14 +526,21 @@ hr{
 /* footer */
 
 .footer{
-  text-align: center;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  text-align: left;
   background-color: #FBBC09;
-  width: 100%
+  /* width: 100%; */
+  padding: 5% 10% 5% 10%;
 }
 
 .footer p{
-  padding: 6% 30% 3% 30%;
+  padding: 6% 10% 3% 10%;
   margin: 0;
+}
+
+.footer a{
+  color: #3c3c3c;
 }
 
 .list-title{
@@ -532,16 +560,16 @@ ol{
 
 .top{
   display: grid;
-  grid-template-columns: repeat(5, 1fr) ;
+  grid-template-columns: repeat(6, 1fr) ;
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
-  align-items: center;
+  /* align-items: center; */
   color: #404040;
 }
 
 .top-home{
   display: grid;
-  grid-template-columns: minmax(64px, 3fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) ;
+  grid-template-columns: minmax(64px, 3fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) ;
   background-color: #FBBC09;
   padding: 0 10% 0 10%;
   align-items: center;
@@ -612,6 +640,9 @@ ol{
 }
 .yellow{
   background-color: #FBBC09;
+}
+.deep-yellow{
+  background-color: #ffa700;;
 }
 .neon{
   background-color: #53ef66
@@ -999,6 +1030,7 @@ ol{
         grid-template-areas:
           "p t"
           "p q"
+          "p u"
           "p r"
           "p s";
       }
@@ -1020,6 +1052,9 @@ ol{
       }
       #port-button{
         grid-area: q;
+      }
+      #talk-button{
+        grid-area: u;
       }
       #resume-button{
         grid-area: r;
@@ -1103,6 +1138,22 @@ ol{
 
       .banner h2{
           text-align: left;
+      }
+
+      .talks-page {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 3%;
+        grid-row-gap: 0;
+        padding: 10% 15% 10% 15%;
+      }
+
+      .cat-talks {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 3%;
+        grid-row: minmax(30%, auto);
+        padding: 5% 15% 5% 15%;
       }
 
       .work-ex, .internships, .education, .awards, .speaking, .published, .fellowships{
