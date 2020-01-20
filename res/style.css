@@ -233,8 +233,7 @@ a:active {
 }
 
 .res{
-    grid-template-columns: repeat(6, 1fr);
-
+    grid-template-columns: repeat(7, 1fr);
 }
 
 
@@ -259,7 +258,7 @@ a:active {
   grid-template-columns: 1fr 1fr 1fr 1fr;
   grid-column-gap: 3%;
   grid-row-gap: 0;
-  padding: 10% 15% 10% 15%;
+  padding: 5% 15% 5% 15%;
 }
 .cat-talks {
   display: grid;
@@ -822,6 +821,7 @@ ol{
     "l f ."
     "l g ."
     "l h .";
+    margin: 2% 0 1% 0;
 }
 
 .resume-left{
