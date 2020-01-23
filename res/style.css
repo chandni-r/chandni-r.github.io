@@ -128,7 +128,7 @@ a:active {
  z-index: 99; /* Make sure it does not overlap */
  border: none; /* Remove borders */
  outline: none; /* Remove outline */
- background-color: #FBBC09; /* Set a background color */
+ background-color: #ffae30; /* Set a background color */
  color: #3c3c3c; /* Text color */
  cursor: pointer; /* Add a mouse pointer on hover */
  padding: 5px 35px 5px 35px; /* Some padding */
@@ -203,7 +203,7 @@ a:active {
 .header{
   position: relative;
   width: 100%;
-  background: #FBBC09;
+  background: #ffae30;
 }
 
 .header img{
@@ -252,6 +252,22 @@ a:active {
   grid-column-gap: 3%;
   grid-row-gap: 0;
   padding: 10% 15% 10% 15%;
+}
+.cat-4 {
+  display: grid;
+  grid-template-columns: 1fr;
+  grid-column-gap: 3%;
+  padding: 5% 15% 5% 15%;
+}
+.cat-5{
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  grid-column-gap: 3%;
+  padding: 5% 0 5% 0;
+}
+.cat-4 img{
+  width: 100%;
+  border-radius: 2px;
 }
 .cat-1 {
   display: grid;
@@ -389,13 +405,14 @@ hr{
 
 .more-buttons{
   display: grid;
-  grid-template-rows: minmax(3vh, auto) 1fr;
+  grid-template-rows: minmax(3vh, auto) 6vh;
   padding: 0px 5% 0% 5%;
-  text-align: center;
+  text-align:center;
+  /* align-items:flex-end; */
 
 }
 .more-buttons p{
-  margin: 0;
+  padding: 0 0  1% 0;
 }
 
 .more-buttons button{
@@ -411,6 +428,9 @@ hr{
 }
 .home-info{
   margin: 2% 10% 5% 2%;
+}
+.home-info.ux{
+    margin: 2% 2% 2% 2%;
 }
 .home-info h4{
   font-family: 'Montserrat', sans-serif;
@@ -528,7 +548,7 @@ hr{
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   text-align: left;
-  background-color: #FBBC09;
+  background-color: #ffae30;
   /* width: 100%; */
   padding: 5% 10% 5% 10%;
 }
@@ -560,7 +580,7 @@ ol{
 .top{
   display: grid;
   grid-template-columns: repeat(6, 1fr) ;
-  background-color: #FBBC09;
+  background-color: #ffae30;
   padding: 0 10% 0 10%;
   /* align-items: center; */
   color: #404040;
@@ -569,7 +589,7 @@ ol{
 .top-home{
   display: grid;
   grid-template-columns: minmax(64px, 3fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) ;
-  background-color: #FBBC09;
+  background-color: #ffae30;
   padding: 0 10% 0 10%;
   align-items: center;
   color: #404040;
@@ -618,37 +638,6 @@ ol{
 }
 
 
-/* colors */
-.green {
-    background-color: #8ec340;
-}
-.deep-green {
-    background-color: #97ce44;
-}
-.blue {
-    background-color: #45a6ca;
-}
-.light-blue {
-    background-color: #8bd9fc;
-}
-.white{
-  background-color: #fff;
-}
-.white h2{
-  color: #3c3c3c;
-}
-.yellow{
-  background-color: #FBBC09;
-}
-.deep-yellow{
-  background-color: #ffa700;;
-}
-.neon{
-  background-color: #53ef66
-}
-.fresh{
-  background-color: #b1d626;
-}
 
 
 /* About */
@@ -844,7 +833,7 @@ ol{
 }
 
 .banner{
-  background: #FBBC09;
+  background: #ffae30;
   padding: 50px 25% 70px 25%;
   margin:0;
 }
@@ -926,6 +915,49 @@ ol{
 .w3-left, .w3-right, .w3-badge {cursor:pointer}
 .w3-badge {height:13px;width:13px;padding:0}
 
+/* colors */
+.green {
+    background-color: #8ec340;
+}
+.deep-green {
+    background-color: #97ce44;
+}
+.blue {
+    background-color: #45a6ca;
+}
+.blue-1{
+  background-color: #3498db;
+}
+.blue-green{
+  background-color:  #1abc9c ;
+}
+.light-blue {
+    background-color: #8bd9fc;
+}
+.white{
+  background-color: #fff;
+}
+.white h2{
+  color: #3c3c3c;
+}
+.yellow{
+  background-color: #ffae30;
+}
+.deep-yellow{
+  background-color: #ffa700;;
+}
+.neon{
+  background-color: #53ef66
+}
+.fresh{
+  background-color: #b1d626;
+}
+.red{
+  /* background-color: #f4796d; */
+  background-color: #f0814a
+  ;
+}
+
 /* smaller screen properties */
 
 @media only screen and (max-width: 1000px) {
@@ -985,7 +1017,7 @@ ol{
       .top{
         /* display: grid;
         grid-template-columns: minmax(64px, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr) minmax(min-content, 1fr)  ;
-        background-color: #FBBC09;
+        background-color: #ffae30;
         padding: 0 10% 0 0; */
       }
       .about-content{
@@ -1216,6 +1248,7 @@ ol{
           display: grid;
           grid-template-columns: 1fr 1fr;
           grid-row-gap: 2%;
+          grid-column-gap: 5%;
           padding: 5% 5% 15% 5%;
       }
       .home-info h4 {
