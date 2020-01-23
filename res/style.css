@@ -1110,7 +1110,16 @@ ol{
       .cat-project{
         padding: 2%;
       }
-
+      .cat-5{
+        padding: 0;
+        margin 2%;
+      }
+      .cat-5{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-column-gap: 3%;
+        padding: 5% 0 30% 0;
+      }
 
       /* grids */
 
